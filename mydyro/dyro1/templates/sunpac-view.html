@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'project-view.css' %}">
+    <title>Work</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5CS37QY3Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B5CS37QY3Z');
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
+            <div class="nav">
+                <div class="btn-n" data-url="/#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" id="dw" data-url="/#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="{% url 'about' %} ">
+                    About us
+                </div>
+                <div  class="btn-n" data-url="/#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="auth">
+                <div class="btn-a" id="ss" data-url="{% url 'login' %}">
+                    Login
+                </div>
+                <div class="btn-a" id="ss" data-url="{% url 'signup' %}">
+                    Sign Up
+                </div>
+            </div>
+        </div>
+        <div class="con-img">
+            <img src="{% static 'aset/1.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/2.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/3.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/4.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/5.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/6.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/7.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/8.webp' %}" alt="">
+        </div>
+
+
+        <div class="footer">
+            <div class="f-logo" data-url="/">
+                <img class=".nav-logo" src="{% static 'aset/logo.svg' %}" alt="">
+                <p>Got a big idea? Let's make it happen.</p>
+            </div>
+
+            <div class="nav">
+                <div class="btn-n" data-url="/#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" id="dw" data-url="/#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="{% url 'about' %}">
+                    About us
+                </div>
+                <div class="btn-n" data-url="/#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="social">
+                <img src="{% static 'aset/yt.svg' %}" class="s1" data-url="https://www.youtube.com/@DyroDev" alt="">
+                <img src="{% static 'aset/lkd.svg' %}" class="s1" data-url="https://www.linkedin.com/company/dyro-dev"
+                    alt="">
+                <img src="{% static 'aset/x.svg' %}" class="s1" data-url="https://x.com/DyroDev" alt="">
+                <img src="{% static 'aset/inst.svg' %}" class="s1" data-url="https://www.instagram.com/dyrodev/" alt="">
+
+            </div>
+
+            <p>© Dyro Dev. All rights reserved 2024</p>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const hlinks = document.querySelectorAll(".btn-n, .f-logo");
+
+
+            hlinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url
+
+                    this.classList.add('clicked');
+
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+
+            const socialIcons = document.querySelectorAll(".s1");
+
+            socialIcons.forEach(icon => {
+                icon.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.open(url, '_blank'); // Opens the URL in a new tab
+
+                    this.classList.add('clicked');
+
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

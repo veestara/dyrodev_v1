@@ -1,0 +1,89 @@
+/* ----- SLIDER VERTICAL CARDS ----- */
+.slider--vertical-cards {
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+.slider--vertical-cards__item {
+    padding: 120px 50px;
+    border-radius: 40px;
+    font-family: 'SpaceGrotesk';
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 72px;
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    outline: none;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.slider--vertical-cards__item.blue {
+    background: linear-gradient(180deg, #A9B1FF -110.08%, #3E4FEA 106.37%);
+}
+.slider--vertical-cards__item.green {
+    background: linear-gradient(180deg, #B4F6BB -65.33%, #8AEF87 113.47%);
+}
+.slider--vertical-cards__item.lightblue {
+    background: linear-gradient(180deg, #B4F6F0 -65.33%, #87EFE6 113.47%);
+}
+.slider--vertical-cards__item .opacity-70 {
+    opacity: 0.7;
+}
+.slider--vertical-cards__item.item-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.slider--vertical-cards__item .icon {
+    position: relative;
+    top: 17px;
+    min-width: 75px;
+    height: 75px;
+    background-size: 75px;
+}
+.slider--vertical-cards__item.item-flex .icon:not(.icon-small) {
+    position: static;
+    margin-right: 15px;
+    background-size: 120px;
+    min-width: 120px;
+    height: 120px;
+}
+.slider--vertical-cards__small-text {
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: normal;
+    line-height: 1.36;
+}
+.slider--vertical-cards .slick-list {
+    padding-top: 75px;
+    /*height: 557px !important;*/
+}
+.slider--vertical-cards.earn .slick-list {
+    /*height: auto!important;*/
+}
+.slider--vertical-cards .slick-current {
+    width: 100% !important;
+}
+.slider--vertical-cards .slick-sprev {
+    transform: translate3d(0, 86%, 0) scale3d(0.9, 0.9, 0.9);
+    margin: 0 auto;
+}
+.slider--vertical-cards .slick-sprev2 {
+    transform: translate3d(0, 174%, 0) scale3d(0.8, 0.8, 0.8);
+    margin: 0 auto;
+}
+.slider--vertical-cards.earn .slick-sprev {
+    transform: translate3d(0, 325px, 0) scale3d(0.9, 0.9, 0.9);
+    margin: 0 auto;
+}
+.slider--vertical-cards.earn .slick-sprev2 {
+    transform: translate3d(0, 655px, 0) scale3d(0.8, 0.8, 0.8);
+    margin: 0 auto;
+}
+.slider--vertical-cards .slick-snext,
+.slider--vertical-cards .slick-snext2 {
+    opacity: 0 !important;
+    display: none !important;
+    width: 0 !important;
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dyro Dev provides web app development, & UI/UX design services. Transform ideas into reality with our digital solutions.">
+    <meta name="keywords"
+        content="Dyro Dev, Full-stack development agency,Web development services, Application development agency, Mobile app development, Custom app development, UI/UX design agency, User experience design, User interface design, Digital solutions agency, Innovative technology, Web app development, Front-end development, Back-end development, Comprehensive development services, Professional web design agency, UI UX design, web app development, app development, web development, software solutions, digital transformation">
+    <meta name="author" content="Dyro Dev">
+    <link rel="canonical" href="https://www.dyrodev.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'aset/fav/AppleDyroDev180x180.png' %}">
+
+    <!-- Favicon for general use -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'aset/fav/DyroDev16x16.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'aset/fav/DyroDev32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'aset/fav/DyroDev192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="194x194" href="{% static 'aset/fav/DyroDev194x194.png' %}">
+
+    <!-- Manifest file -->
+    <link rel="manifest" href="{% static 'aset/fav/site.webmanifest' %}">
+
+    <!-- Safari pinned tab -->
+    <link rel="mask-icon" href="{% static 'aset/fav/DyroDev.svg' %}" color="#ffffff">
+
+    <!-- Default favicon (ICO format) -->
+    <link rel="shortcut icon" href="{% static 'aset/fav/DyroDev.ico' %}">
+
+    <!-- Microsoft Tile color and image -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'aset/fav/DyroDev144x144.png' %}">
+
+
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <title>Dyro Dev: UI UX Design & Web App Development Agency</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5CS37QY3Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B5CS37QY3Z');
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
+            <div class="nav">
+                <div class="btn-n" data-url="#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="{% url 'about' %} ">
+                    About us
+                </div>
+                <div  class="btn-n" data-url="#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="auth">
+                <div class="btn-a" id="ss" data-url="{% url 'login' %}">
+                    Login
+                </div>
+                <div class="btn-a" id="ss" data-url="{% url 'signup' %}">
+                    Sign Up
+                </div>
+            </div>
+        </div>
+
+        <div class="hero">
+
+            <div class="left">
+                <div class="con">
+                    <svg id="o1" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="25" cy="70" rx="25" ry="70" />
+                    </svg>
+
+                    <svg id="o2" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="25" cy="70" rx="25" ry="70" />
+                    </svg>
+
+                    <svg id="o3" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="25" cy="75" rx="25" ry="75" />
+                    </svg>
+
+                    <svg id="o4" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="25" cy="75" rx="25" ry="75" />
+                    </svg>
+
+                    <img src="{% static 'aset/tt.svg' %}" alt="">
+                </div>
+                         
+            </div>
+
+            <div class="right">
+                <h2>Hi There, <br> It's Dyro Dev.</h2>
+                <p>Got a big idea? Let's make it happen together.</p>
+            </div>
+        </div>
+
+        <div id="con-pro" class="con-pro">
+            <div class="s1 q1">
+                <div class="left">
+                    <h2>We brainstorm, doodle, and dream big! <br> Let's brew some creativity together.</h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e1.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="s1 q1">
+                <div class="left">
+                    <h2>From pixels to perfection,<br> we craft designs that pop and sizzle. <br> </h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e2.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="s1 q1">
+                <div class="left">
+                    <h2>Our developers work their magic, <br> turning lines of code into your dream product.</h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e3.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="s1 q1">
+                <div class="left">
+                    <h2>We put it to the test and launch <br> your masterpiece into the digital universe.</h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e4.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="background-elements">
+                <div class="element1"></div>
+                <div class="element2"></div>
+            </div>
+
+            <div class="con-spec">
+
+                <div class="card card1">
+
+                    <div class="cr">
+                        <img src="{% static 'aset/i2.svg' %}" alt="">
+                    </div>
+
+                    <h1>Full-Stack <br> Development</h1>
+                </div>
+                <div class="card card2">
+
+                    <div class="cr">
+                        <img src="{% static 'aset/i1.svg' %}" alt="">
+                    </div>
+
+                    <h1> App <br> Development</h1>
+                </div>
+                <div class="card card3">
+
+                    <div class="cr">
+                        <img src="{% static 'aset/i3.svg' %}" alt="">
+                    </div>
+
+                    <h1>UI/UX Design</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="con-work" class="con-work">
+            <h1>Our Work</h1>
+            <div class="con-grid">
+                <div class="pro1 pv" data-url="{% url 'sunpac_view' %}">
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+
+                </div>
+
+                <div class="pro1  pv" data-url="{% url 'sunpac_view' %}">
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+
+                </div>
+
+                <div class="pro1  pv" data-url="{% url 'sunpac_view' %}">
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+
+                </div>
+
+                <div class="pro1  pv" data-url="{% url 'sunpac_view' %}">
+
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="con-test">
+            <h1>What People Says...</h1>
+            <div class="con-slid">
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>I was impressed with DyroDev's ability to handle our entire project, from UI/UX design to web
+                            development. Their clear communication and exceptional design talent made the process smooth
+                            and enjoyable. I highly recommend them for any design or development needs.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> Team Dyro Dev works tirelessly to meet all client needs and consistently delivers
+                            high-quality results. Their organization is trustworthy, consistently demonstrating their
+                            commitment to delivering excellence.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> Thanks to Dyro Dev's work, our website's checkout time has been reduced to just one minute,
+                            significantly boosting our business.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> What impressed me the most was their value proposition. The Dyro Dev team is exceptionally
+                            talented, bringing high-quality UX and UI design to our project at very competitive pricing.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con-contact" class="con-contact">
+            <div class="left">
+                <div class="txt">
+                    <h1>Hey! got a big idea? <br> Let's connect & make it happen </h1>
+                    <p>We are here to bring your idea to life!</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="con-form">
+                    <form action="{% url 'home'%}" method="post">
+                        {% csrf_token %}
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                        <input required type="tel" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" required
+                            id="phone" name="phone" placeholder="Phone">
+                        <input required type="email" id="email" name="email" placeholder="Email"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        <textarea id="" rows="12" name="message" placeholder="Tell us about your big idea.."
+                            required></textarea>
+                        <button type="submit">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f-logo" data-url="/">
+                <img class=".nav-logo" src="{% static 'aset/logo.svg' %}" alt="">
+                <p>Got a big idea? Let's make it happen.</p>
+            </div>
+
+            <div class="nav">
+                <div class="btn-n" data-url="#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="{% url 'about' %}">
+                    About us
+                </div>
+                <div class="btn-n" data-url="#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="social">
+                <img src="{% static 'aset/yt.svg' %}" class="s1" data-url="https://www.youtube.com/@DyroDev" alt="">
+                <img src="{% static 'aset/lkd.svg' %}" class="s1" data-url="https://www.linkedin.com/company/dyro-dev"
+                    alt="">
+                <img src="{% static 'aset/x.svg' %}" class="s1" data-url="https://x.com/DyroDev" alt="">
+                <img src="{% static 'aset/inst.svg' %}" class="s1" data-url="https://www.instagram.com/dyrodev/" alt="">
+
+            </div>
+
+            <p>© Dyro Dev. All rights reserved 2024</p>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const s1Elements = document.querySelectorAll('.q1');
+            const windowHeight = window.innerHeight;
+
+            s1Elements.forEach(s1 => {
+                const rect = s1.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const offset = rect.top + scrollTop;
+
+                const left = s1.querySelector('.left');
+                const right = s1.querySelector('.right');
+
+                const scrollPercent = (window.scrollY - offset + windowHeight) / (windowHeight + rect.height);
+
+                const parallaxOffset = (scrollPercent * 100) - 50; // Adjust this for the desired effect
+
+                left.style.transform = `translateY(${parallaxOffset * 2}px)`; // Adjust multiplier for speed
+                right.style.transform = `translateY(${parallaxOffset * 1.5}px)`; // Adjust multiplier for speed
+            });
+
+            const conElements = document.querySelectorAll('.con');
+
+
+            // conElements.forEach(con => {
+            //     const rect = con.getBoundingClientRect();
+            //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            //     const offset = rect.top + scrollTop;
+
+            //     const scrollPercent = (window.scrollY - offset + windowHeight) / (windowHeight + rect.height);
+            //     const parallaxOffset = (scrollPercent * 50) - 1; // Adjust this for the desired effect
+
+            //     con.style.transform = `translateY(${parallaxOffset * .5}px)`; // Adjust multiplier for speed
+            // });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card');
+            let currentIndex = 0;
+
+            function showCard(index) {
+                cards.forEach((card, i) => {
+                    card.classList.remove('slick-current', 'slick-sprev', 'slick-sprev2');
+                    if (i === index) {
+                        card.classList.add('slick-current');
+                    } else if (i === (index + 1) % cards.length) {
+                        card.classList.add('slick-sprev');
+                    } else if (i === (index + 2) % cards.length) {
+                        card.classList.add('slick-sprev2');
+                    } else {
+                        card.style.opacity = '0';  // Ensure other cards are hidden
+                    }
+                });
+            }
+
+            function cycleCards() {
+                currentIndex = (currentIndex + 1) % cards.length;
+                showCard(currentIndex);
+            }
+
+            // Initialize the first card as current
+            showCard(currentIndex);
+
+            // Set an interval to cycle through cards every 5 seconds (5000 milliseconds)
+            setInterval(cycleCards, 3000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const hlinks = document.querySelectorAll(".btn-n, .btn-a, .f-logo, .pv ");
+
+
+            hlinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url
+
+                    this.classList.add('clicked');
+
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+
+            const socialIcons = document.querySelectorAll(".s1");
+
+            socialIcons.forEach(icon => {
+                icon.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.open(url, '_blank'); // Opens the URL in a new tab
+
+                    this.classList.add('clicked');
+
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
