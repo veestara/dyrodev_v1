@@ -25097,3 +25097,866 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [msg] in [{'Tru
 "GET /static/aset/fav/DyroDev192x192.png HTTP/1.1" 404 1840
 "GET /static/aset/fav/DyroDev194x194.png HTTP/1.1" 404 1840
 "GET /static/aset/fav/DyroDev.ico HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir D:\DyroDev\aversion\site\mydyro\dyro1\templates with glob **/*.
+Watching dir D:\DyroDev\aversion\site\mydyro\templates with glob **/*.
+Watching dir D:\DyroDev\aversion\site\mydyro\locale with glob **/*.mo.
+Watching dir D:\DyroDev\aversion\site\mydyro\dyro1\locale with glob **/*.mo.
+(0.031) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+File D:\DyroDev\site\myenv\Lib\site-packages\django\conf\urls\static.py first seen with mtime 1716132374.3889723
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\templates.py first seen with mtime 1716132389.6879447
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\base.py first seen with mtime 1716132390.1572726
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\constraints.py first seen with mtime 1716132390.314866
+File D:\Python310\Lib\email\contentmanager.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\importlib\machinery.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\options.py first seen with mtime 1716132374.4158287
+File D:\Python310\Lib\re.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\json\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_tpc.py first seen with mtime 1719469732.6181695
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\signals.py first seen with mtime 1716132377.335707
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\operations\base.py first seen with mtime 1716132390.2659564
+File D:\Python310\Lib\zoneinfo\_tzpath.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\email\feedparser.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\email\_parseaddr.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\templatetags\__init__.py first seen with mtime 1716132391.0410898
+File D:\Python310\Lib\urllib\error.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\__init__.py first seen with mtime 1716132390.2094696
+File D:\Python310\Lib\email\_policybase.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\locale.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\bool.py first seen with mtime 1719469732.6797686
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\__init__.py first seen with mtime 1716132374.4013393
+File D:\DyroDev\site\myenv\Lib\site-packages\colorama\initialise.py first seen with mtime 1718567532.6512077
+File D:\DyroDev\site\myenv\Lib\site-packages\asgiref\local.py first seen with mtime 1716132373.0138195
+File D:\DyroDev\aversion\site\mydyro\dyro1\views.py first seen with mtime 1719483013.2251387
+File D:\DyroDev\site\myenv\Lib\site-packages\django\conf\locale\__init__.py first seen with mtime 1716132373.3595119
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\boundfield.py first seen with mtime 1716132390.510215
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\converters.py first seen with mtime 1716132391.1084194
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\cache\__init__.py first seen with mtime 1716132389.6147594
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\validation.py first seen with mtime 1716132390.0694666
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\security\sessions.py first seen with mtime 1716132389.7211094
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\management\__init__.py first seen with mtime 1716132379.4645054
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\signals.py first seen with mtime 1716132390.0116146
+File D:\DyroDev\site\myenv\Lib\site-packages\colorama\win32.py first seen with mtime 1718567532.6572194
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\forms.py first seen with mtime 1716132377.2993135
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\indexes.py first seen with mtime 1716132390.3265772
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\apps.py first seen with mtime 1716132388.4562142
+File D:\Python310\Lib\nturl2path.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loaders\cached.py first seen with mtime 1716132391.0352015
+File D:\Python310\Lib\contextlib.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\none.py first seen with mtime 1719469732.692852
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\views.py first seen with mtime 1716132378.5076854
+File D:\Python310\Lib\http\client.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\__init__.py first seen with mtime 1716132390.9060516
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\cache\backends\base.py first seen with mtime 1716132389.6217766
+File D:\Python310\Lib\collections\abc.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\asgiref\sync.py first seen with mtime 1716132373.0179603
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\module_loading.py first seen with mtime 1716132391.291515
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\connection.py first seen with mtime 1719469732.627713
+File D:\DyroDev\site\myenv\Lib\site-packages\django\templatetags\l10n.py first seen with mtime 1716132391.049487
+File D:\Python310\Lib\enum.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\checks.py first seen with mtime 1716132374.406673
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_transform.py first seen with mtime 1719469732.619179
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\signals.py first seen with mtime 1716132389.602098
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\aggregates.py first seen with mtime 1716132390.3064651
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\dbapi20.py first seen with mtime 1719469732.6389961
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\hashers.py first seen with mtime 1716132377.3023152
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\client_cursor.py first seen with mtime 1719469732.6256864
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\management\__init__.py first seen with mtime 1716132378.406609
+File D:\Python310\Lib\email\generator.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_cmodule.py first seen with mtime 1719469732.6028593
+File D:\Python310\Lib\asyncio\mixins.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\__init__.py first seen with mtime 1716132377.279169
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\translation\trans_real.py first seen with mtime 1716132391.360263
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\enums.py first seen with mtime 1716132390.321389
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\serializers\base.py first seen with mtime 1716132389.9603193
+File D:\Python310\Lib\getpass.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\http\cookie.py first seen with mtime 1716132390.8611825
+File D:\Python310\Lib\asyncio\futures.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py first seen with mtime 1716132389.5689473
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\security\csrf.py first seen with mtime 1716132389.7190993
+File D:\Python310\Lib\mimetypes.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\base64.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\email\mime\nonmultipart.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\smartif.py first seen with mtime 1716132390.9548523
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\lorem_ipsum.py first seen with mtime 1716132391.2895193
+File D:\Python310\DLLs\_uuid.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\files.py first seen with mtime 1716132390.3941457
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\datastructures.py first seen with mtime 1716132391.2038095
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_adapters_map.py first seen with mtime 1719469732.6008568
+File D:\Python310\Lib\typing.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\__init__.py first seen with mtime 1716132390.0062978
+File D:\Python310\Lib\wsgiref\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\itercompat.py first seen with mtime 1716132391.2817113
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\datastructures.py first seen with mtime 1716132390.4802854
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1716132387.413479
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_conninfo_attempts.py first seen with mtime 1719469732.607146
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\window.py first seen with mtime 1716132390.4691217
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\formatter.py first seen with mtime 1716132372.250043
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\checks.py first seen with mtime 1716132377.2882562
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sitemaps\apps.py first seen with mtime 1716132388.4434588
+File D:\Python310\DLLs\_queue.pyd first seen with mtime 1642409764.0
+File D:\Python310\Lib\datetime.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\ctypes\wintypes.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\base_tasks.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\crypto.py first seen with mtime 1716132391.2012856
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\array.py first seen with mtime 1719469732.6787684
+File D:\DyroDev\site\myenv\Lib\site-packages\django\http\request.py first seen with mtime 1716132390.866775
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\__init__.py first seen with mtime 1716132389.5782313
+File D:\Python310\Lib\fnmatch.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\translation\__init__.py first seen with mtime 1716132391.351158
+File D:\Python310\DLLs\_hashlib.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\psycopg_any.py first seen with mtime 1716132390.1825078
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\right_margin.py first seen with mtime 1716132372.2691977
+File D:\DyroDev\site\myenv\Lib\site-packages\django\http\__init__.py first seen with mtime 1716132390.8591821
+File D:\Python310\Lib\json\scanner.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\generic\__init__.py first seen with mtime 1716132391.4760175
+File D:\Python310\Lib\io.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\stat.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\types.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\apps.py first seen with mtime 1716132389.5194888
+File D:\Python310\Lib\ntpath.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\defaultfilters.py first seen with mtime 1716132390.9192655
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\__init__.py first seen with mtime 1716132391.3643005
+File D:\DyroDev\aversion\site\mydyro\dyro1\admin.py first seen with mtime 1719481895.7546594
+File D:\Python310\Lib\json\encoder.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\views\main.py first seen with mtime 1716132376.3761537
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\enum.py first seen with mtime 1719469732.6871655
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\constants.py first seen with mtime 1716132390.4782808
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\ddl_references.py first seen with mtime 1716132390.0095968
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\filters.py first seen with mtime 1716132374.4106736
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\client.py first seen with mtime 1716132390.1602764
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\timezone.py first seen with mtime 1716132391.328696
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\backends\base.py first seen with mtime 1716132390.9608662
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\actions.py first seen with mtime 1716132374.4038627
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\handlers\base.py first seen with mtime 1716132389.7790287
+File D:\Python310\Lib\encodings\cp1252.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\files.py first seen with mtime 1716132389.6798453
+File D:\Python310\Lib\http\server.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\email\_encoded_words.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\conf\urls\__init__.py first seen with mtime 1716132374.3869717
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\features.py first seen with mtime 1716132390.0599308
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\utils.py first seen with mtime 1716132389.740095
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_encodings.py first seen with mtime 1719469732.6111534
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\apps.py first seen with mtime 1716132387.395194
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\base.py first seen with mtime 1716132389.7256236
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\subqueries.py first seen with mtime 1716132390.4871666
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\admin.py first seen with mtime 1716132378.4769847
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\management\base.py first seen with mtime 1716132389.8390079
+File D:\DyroDev\site\myenv\Lib\site-packages\django\middleware\__init__.py first seen with mtime 1716132390.871149
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\transaction.py first seen with mtime 1716132390.0018637
+File D:\Python310\Lib\asyncio\selector_events.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\utils.py first seen with mtime 1716132390.3705127
+File D:\Python310\Lib\pickle.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\response.py first seen with mtime 1716132390.9518015
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\tokens.py first seen with mtime 1716132372.2552538
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\base.py first seen with mtime 1716132390.3104894
+File D:\Python310\DLLs\_lzma.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\dateparse.py first seen with mtime 1716132391.2270486
+File D:\Python310\Lib\email\mime\message.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\utils.py first seen with mtime 1716132391.1736157
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\formats.py first seen with mtime 1716132391.2543182
+File D:\Python310\Lib\dataclasses.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\backends\django.py first seen with mtime 1716132390.966479
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\base.py first seen with mtime 1716132391.103449
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\decorators.py first seen with mtime 1716132391.2391918
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\handlers\exception.py first seen with mtime 1716132389.7810266
+File D:\Python310\Lib\asyncio\base_subprocess.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\conf\__init__.py first seen with mtime 1716132373.3458676
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\cache\backends\filebased.py first seen with mtime 1716132389.6278348
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\decorators.py first seen with mtime 1716132374.4086864
+File D:\Python310\Lib\struct.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\os.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\ssl.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\format_helpers.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\email\base64mime.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\locks.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\models.py first seen with mtime 1716132388.5085526
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\output.py first seen with mtime 1716132372.2671957
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\pq\_enums.py first seen with mtime 1719469732.6697376
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\engine.py first seen with mtime 1716132390.9253063
+File D:\Python310\Lib\copyreg.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\generic\edit.py first seen with mtime 1716132391.5310302
+File D:\Python310\Lib\uu.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\duration.py first seen with mtime 1716132391.2442427
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\exceptions.py first seen with mtime 1716132391.1104178
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\translation\reloader.py first seen with mtime 1716132391.353722
+File D:\Python310\Lib\asyncio\streams.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1716132377.2842202
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\templatetags\log.py first seen with mtime 1716132376.3686118
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\keywords.py first seen with mtime 1716132372.251167
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\operations\fields.py first seen with mtime 1716132390.2678995
+File D:\Python310\Lib\html\parser.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\tempfile.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1716132387.4037595
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\handlers\wsgi.py first seen with mtime 1716132389.7833612
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_preparing.py first seen with mtime 1719469732.615132
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\management\color.py first seen with mtime 1716132389.8410108
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\cursor_async.py first seen with mtime 1719469732.6380055
+File D:\Python310\Lib\email\encoders.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\_compat_pickle.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\static.py first seen with mtime 1716132391.4062736
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\storage\base.py first seen with mtime 1716132389.753363
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\expressions.py first seen with mtime 1716132390.3238964
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\net.py first seen with mtime 1719469732.6908674
+File D:\Python310\Lib\abc.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\asgiref\__init__.py first seen with mtime 1716132373.0093002
+File D:\DyroDev\site\myenv\Lib\site-packages\django\dispatch\__init__.py first seen with mtime 1716132390.5003114
+File D:\Python310\Lib\asyncio\__init__.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\functools.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\__init__.py first seen with mtime 1716132384.5283034
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\deprecation.py first seen with mtime 1716132391.242191
+File D:\Python310\DLLs\_asyncio.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_connection_info.py first seen with mtime 1719469732.605868
+File D:\Python310\Lib\genericpath.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\middleware\cache.py first seen with mtime 1716132390.8736544
+File D:\Python310\Lib\email\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\storage\filesystem.py first seen with mtime 1716132389.7571845
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\views\__init__.py first seen with mtime 1716132376.3706126
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\schema.py first seen with mtime 1716132390.1845276
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\__init__.py first seen with mtime 1719469732.6777658
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\connection_async.py first seen with mtime 1719469732.6287158
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\forms.py first seen with mtime 1716132390.5163112
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\waiting.py first seen with mtime 1719469732.6510215
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\encoding.py first seen with mtime 1716132391.248292
+File D:\DyroDev\site\myenv\Lib\site-packages\django\http\response.py first seen with mtime 1716132390.869775
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\apps.py first seen with mtime 1716132377.2821705
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\reverse_related.py first seen with mtime 1716132390.4285707
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\transaction.py first seen with mtime 1719469732.6490262
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\mail\__init__.py first seen with mtime 1716132389.7856567
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\utils.py first seen with mtime 1716132372.258263
+File D:\Python310\Lib\subprocess.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\__init__.py first seen with mtime 1716132391.1761649
+File D:\Python310\Lib\asyncio\staggered.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\bisect.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_enums.py first seen with mtime 1719469732.6124988
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\__init__.py first seen with mtime 1716132390.4721239
+File D:\Python310\Lib\http\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\migration.py first seen with mtime 1716132390.2319913
+File D:\Python310\Lib\linecache.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\handlers\asgi.py first seen with mtime 1716132389.7770257
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\conninfo.py first seen with mtime 1719469732.6297057
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\string.py first seen with mtime 1719469732.697899
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_queries.py first seen with mtime 1719469732.6166606
+File D:\Python310\Lib\email\errors.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\base.py first seen with mtime 1716132390.0518615
+File D:\Python310\Lib\_collections_abc.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\__init__.py first seen with mtime 1716132390.508041
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\management\commands\__init__.py first seen with mtime 1716132389.5619063
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\functional.py first seen with mtime 1716132391.257508
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\exceptions.py first seen with mtime 1716132372.248532
+File D:\Python310\Lib\importlib\_abc.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\selectors.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\queue.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\caches.py first seen with mtime 1716132389.6768277
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\model_checks.py first seen with mtime 1716132389.6843772
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\pq\pq_ctypes.py first seen with mtime 1719469732.6757534
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\tree.py first seen with mtime 1716132391.334198
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\generic\base.py first seen with mtime 1716132391.521595
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loaders\app_directories.py first seen with mtime 1716132391.0306551
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1716132377.3154879
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\datetime.py first seen with mtime 1716132390.458892
+File D:\DyroDev\site\myenv\Lib\site-packages\django\middleware\csrf.py first seen with mtime 1716132390.8929045
+File D:\Python310\Lib\sre_parse.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\ctypes\_endian.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\json.py first seen with mtime 1719469732.6888528
+File D:\Python310\Lib\hashlib.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\token.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\models.py first seen with mtime 1716132387.4064596
+File D:\Python310\Lib\gettext.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\templatetags\base.py first seen with mtime 1716132376.3666208
+File D:\DyroDev\site\myenv\Lib\site-packages\django\templatetags\i18n.py first seen with mtime 1716132391.0474844
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\__init__.py first seen with mtime 1716132389.9984167
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\images.py first seen with mtime 1716132389.7276473
+File D:\Python310\Lib\uuid.py first seen with mtime 1642409712.0
+File D:\DyroDev\aversion\site\mydyro\dyro1\urls.py first seen with mtime 1719468785.7022002
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\renderers.py first seen with mtime 1716132390.5265875
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\storage\base.py first seen with mtime 1716132384.5560744
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\engine\statement_splitter.py first seen with mtime 1716132372.2625506
+File D:\Python310\Lib\ctypes\util.py first seen with mtime 1642409712.0
+File D:\Python310\DLLs\_zoneinfo.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\others.py first seen with mtime 1716132372.2662008
+File D:\DyroDev\site\myenv\Lib\site-packages\colorama\winterm.py first seen with mtime 1718567532.6584003
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sitemaps\views.py first seen with mtime 1716132388.4449902
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\_os.py first seen with mtime 1716132391.1791658
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\operations.py first seen with mtime 1716132390.1700995
+File D:\Python310\Lib\email\parser.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\pq\__init__.py first seen with mtime 1719469732.660607
+File D:\Python310\Lib\sre_compile.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\wsgi.py first seen with mtime 1716132389.6111586
+File D:\Python310\Lib\quopri.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\reindent.py first seen with mtime 1716132372.2681942
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\related_descriptors.py first seen with mtime 1716132390.4237177
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\generic\list.py first seen with mtime 1716132391.5411594
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\introspection.py first seen with mtime 1716132390.1671014
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\cache.py first seen with mtime 1716132391.1911697
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\html.py first seen with mtime 1716132391.2615
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_conninfo_attempts_async.py first seen with mtime 1719469732.6081526
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\__init__.py first seen with mtime 1716132390.4438725
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\copy.py first seen with mtime 1719469732.633708
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\security\base.py first seen with mtime 1716132389.7168322
+File D:\DyroDev\site\myenv\Lib\site-packages\typing_extensions.py first seen with mtime 1719477382.583539
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\conf.py first seen with mtime 1716132391.1060927
+File D:\Python310\DLLs\unicodedata.pyd first seen with mtime 1642409766.0
+File D:\Python310\Lib\asyncio\base_futures.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\widgets.py first seen with mtime 1716132374.4221365
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\utils.py first seen with mtime 1716132389.5551069
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\models.py first seen with mtime 1716132374.4141815
+File D:\Python310\Lib\email\mime\base.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\platform.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\constants.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\queues.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\proxy.py first seen with mtime 1716132390.40529
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\constants.py first seen with mtime 1716132384.5353484
+File D:\Python310\Lib\asyncio\events.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\views.py first seen with mtime 1716132389.5573955
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\deconstruct.py first seen with mtime 1716132391.237191
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\safestring.py first seen with mtime 1716132391.3016493
+File D:\DyroDev\aversion\site\mydyro\dyro1\forms.py first seen with mtime 1719170117.6715176
+File D:\Python310\Lib\importlib\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\numeric.py first seen with mtime 1719469732.6938522
+File D:\Python310\Lib\opcode.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\operations.py first seen with mtime 1716132390.0649924
+File D:\Python310\Lib\posixpath.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\requests.py first seen with mtime 1716132388.5108528
+File D:\Python310\Lib\asyncio\threads.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\widgets.py first seen with mtime 1716132390.5339768
+File D:\Python310\Lib\socket.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\regex_helper.py first seen with mtime 1716132391.298648
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\related_lookups.py first seen with mtime 1716132390.4252424
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\generic\detail.py first seen with mtime 1716132391.5280297
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\base_user.py first seen with mtime 1716132377.2852328
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\range.py first seen with mtime 1719469732.6953611
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\__init__.py first seen with mtime 1716132390.1542392
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\dateformat.py first seen with mtime 1716132391.206072
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\tokens.py first seen with mtime 1716132377.338681
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\adapt.py first seen with mtime 1719469732.6241853
+File D:\DyroDev\site\myenv\Lib\site-packages\django\conf\global_settings.py first seen with mtime 1716132373.3479705
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\admin.py first seen with mtime 1716132388.4541843
+File D:\Python310\Lib\inspect.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\forms.py first seen with mtime 1716132378.4843242
+File D:\Python310\Lib\concurrent\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\ipv6.py first seen with mtime 1716132391.2782867
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\operations\__init__.py first seen with mtime 1716132390.2526276
+File D:\Python310\Lib\asyncio\tasks.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loaders\__init__.py first seen with mtime 1716132391.026642
+File D:\DyroDev\site\myenv\Lib\site-packages\django\dispatch\dispatcher.py first seen with mtime 1716132390.5033123
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_conninfo_utils.py first seen with mtime 1719469732.6091516
+File D:\Python310\Lib\http\cookies.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\handlers.py first seen with mtime 1716132389.5261524
+File D:\DyroDev\aversion\site\mydyro\dyro1\__init__.py first seen with mtime 1716132228.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1716132387.4012272
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\storage\handler.py first seen with mtime 1716132389.7591858
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\defaulttags.py first seen with mtime 1716132390.9232588
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\query.py first seen with mtime 1716132390.3370807
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_typeinfo.py first seen with mtime 1719469732.620179
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\creation.py first seen with mtime 1716132390.1618662
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\models.py first seen with mtime 1716132377.3302538
+File D:\Python310\Lib\urllib\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\__init__.py first seen with mtime 1716132372.2640798
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\templatetags\admin_modify.py first seen with mtime 1716132376.363593
+File D:\Python310\Lib\pprint.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\__init__.py first seen with mtime 1719469732.599857
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_column.py first seen with mtime 1719469732.6038642
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\uuid.py first seen with mtime 1719469732.6999037
+File D:\Python310\Lib\encodings\aliases.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\dis.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\html\entities.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\utils.py first seen with mtime 1716132390.2466073
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\__init__.py first seen with mtime 1716132378.4744585
+File D:\Python310\Lib\traceback.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\timesince.py first seen with mtime 1716132391.310655
+File D:\Python310\Lib\contextvars.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\generic\dates.py first seen with mtime 1716132391.5241556
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\utils.py first seen with mtime 1716132374.4211357
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\serializers\python.py first seen with mtime 1716132389.979607
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\decorators\__init__.py first seen with mtime 1716132391.4224205
+File D:\DyroDev\site\myenv\Lib\site-packages\django\apps\registry.py first seen with mtime 1716132373.3418002
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\apps.py first seen with mtime 1716132384.5333128
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\cache\backends\__init__.py first seen with mtime 1716132389.6187732
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\mixins.py first seen with mtime 1716132390.402188
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\cache\utils.py first seen with mtime 1716132389.616774
+File D:\Python310\Lib\email\mime\multipart.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\trsock.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\base_session.py first seen with mtime 1716132387.3992307
+File D:\Python310\Lib\glob.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\math.py first seen with mtime 1716132390.4618928
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\client.py first seen with mtime 1716132390.0549104
+File D:\Python310\Lib\asyncio\transports.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\utils.py first seen with mtime 1716132390.528461
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\move.py first seen with mtime 1716132389.7320068
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\templatetags\admin_urls.py first seen with mtime 1716132376.3641186
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\storage\mixins.py first seen with mtime 1716132389.7719462
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\exceptions.py first seen with mtime 1716132390.2189865
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\api.py first seen with mtime 1716132384.5303016
+File D:\Python310\Lib\email\mime\text.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\i18n.py first seen with mtime 1716132391.4026048
+File D:\Python310\Lib\gzip.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\utils.py first seen with mtime 1716132390.9578688
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\base.py first seen with mtime 1716132390.9116418
+File D:\Python310\DLLs\select.pyd first seen with mtime 1642409764.0
+File D:\Python310\Lib\email\headerregistry.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\datetime.py first seen with mtime 1719469732.6847725
+File D:\Python310\Lib\codecs.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\checks.py first seen with mtime 1716132378.4802406
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_struct.py first seen with mtime 1719469732.6166606
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\apps.py first seen with mtime 1716132374.4043746
+File D:\Python310\Lib\email\charset.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\query_utils.py first seen with mtime 1716132390.33908
+File D:\DyroDev\aversion\site\mydyro\dyro1\sitemap.py first seen with mtime 1718968897.884278
+File D:\Python310\Lib\email\message.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\compatibility\__init__.py first seen with mtime 1716132389.6949148
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\management\__init__.py first seen with mtime 1716132389.5593925
+File D:\Python310\Lib\reprlib.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1716132384.5403626
+File D:\Python310\Lib\wsgiref\util.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\http.py first seen with mtime 1716132391.2721796
+File D:\Python310\Lib\shutil.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\management\commands\__init__.py first seen with mtime 1716132389.8508146
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\mail\message.py first seen with mtime 1716132389.7876716
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\autoreload.py first seen with mtime 1716132391.189168
+File D:\Python310\Lib\zoneinfo\_common.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1716132387.410479
+File D:\DyroDev\site\myenv\Lib\site-packages\django\apps\__init__.py first seen with mtime 1716132373.3388078
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\inspect.py first seen with mtime 1716132391.2752726
+File D:\Python310\Lib\logging\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\password_validation.py first seen with mtime 1716132377.3335898
+File D:\Python310\Lib\tokenize.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\signals.py first seen with mtime 1716132390.3684847
+File D:\Python310\Lib\graphlib.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\pathlib.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\pkgutil.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\debug.py first seen with mtime 1716132391.3719442
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\utils.py first seen with mtime 1716132390.0136147
+File D:\Python310\Lib\email\header.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\decorators\cache.py first seen with mtime 1716132391.4261293
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\pq\misc.py first seen with mtime 1719469732.6747282
+File D:\Python310\Lib\email\policy.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\http\multipartparser.py first seen with mtime 1716132390.8647614
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\autoreload.py first seen with mtime 1716132390.9082887
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\operations\special.py first seen with mtime 1716132390.3012826
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\uploadedfile.py first seen with mtime 1716132389.737092
+File D:\Python310\Lib\email\iterators.py first seen with mtime 1642409712.0
+File D:\Python310\DLLs\_ssl.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\__init__.py first seen with mtime 1716132374.3993423
+File D:\Python310\Lib\signal.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\protocols.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\warnings.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\management.py first seen with mtime 1716132388.47555
+File D:\Python310\DLLs\_ctypes.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\lexer.py first seen with mtime 1716132372.2531903
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\uploadhandler.py first seen with mtime 1716132389.739094
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\servers\__init__.py first seen with mtime 1716132389.9933584
+File D:\Python310\Lib\weakref.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\management\commands\runserver.py first seen with mtime 1716132389.895916
+File D:\Python310\Lib\asyncio\log.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\schema.py first seen with mtime 1716132390.0684662
+File D:\Python310\Lib\urllib\response.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\difflib.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\options.py first seen with mtime 1716132390.334058
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\backends\__init__.py first seen with mtime 1716132390.958886
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\handlers\__init__.py first seen with mtime 1716132389.7734644
+File D:\Python310\Lib\wsgiref\handlers.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\dates.py first seen with mtime 1716132391.2290785
+File D:\Python310\Lib\decimal.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\engine\grouping.py first seen with mtime 1716132372.2615094
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\generated.py first seen with mtime 1716132390.3971808
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\__init__.py first seen with mtime 1716132389.7241774
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loaders\base.py first seen with mtime 1716132391.0336552
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\management\__init__.py first seen with mtime 1716132389.8370101
+File D:\Python310\Lib\asyncio\windows_utils.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\compatibility\django_4_0.py first seen with mtime 1716132389.6969314
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\exceptions.py first seen with mtime 1716132389.5959513
+File D:\Python310\Lib\email\_header_value_parser.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\encodings\utf_8.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\__init__.py first seen with mtime 1716132390.3043032
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\composite.py first seen with mtime 1719469732.681769
+File D:\Python310\Lib\encodings\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\__init__.py first seen with mtime 1716132391.0998518
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\log.py first seen with mtime 1716132391.287521
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\signing.py first seen with mtime 1716132389.6060944
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\where.py first seen with mtime 1716132390.49631
+File D:\Python310\Lib\asyncio\sslproto.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\sites.py first seen with mtime 1716132374.4168408
+File D:\Python310\Lib\_weakrefset.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\asyncio.py first seen with mtime 1716132391.1861093
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\decorators\csrf.py first seen with mtime 1716132391.4354358
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loaders\filesystem.py first seen with mtime 1716132391.037071
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\translation.py first seen with mtime 1716132389.6899426
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\pq\_pq_ctypes.py first seen with mtime 1719469732.6707292
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\storage\memory.py first seen with mtime 1716132389.768946
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\views\autocomplete.py first seen with mtime 1716132376.372618
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_compat.py first seen with mtime 1719469732.6048577
+File D:\Python310\Lib\site.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\subprocess.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\urls.py first seen with mtime 1716132389.692366
+File D:\DyroDev\aversion\site\mydyro\dyro1\apps.py first seen with mtime 1716132228.0
+File D:\Python310\Lib\__future__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\numberformat.py first seen with mtime 1716132391.294538
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\text.py first seen with mtime 1716132390.4660418
+File D:\Python310\Lib\urllib\parse.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\coroutines.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\asyncio\base_events.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\__init__.py first seen with mtime 1716132390.376629
+File D:\DyroDev\site\myenv\Lib\site-packages\_distutils_hack\__init__.py first seen with mtime 1719477370.878343
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\admin.py first seen with mtime 1716132377.28117
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\paginator.py first seen with mtime 1716132389.6001039
+File D:\DyroDev\aversion\site\mydyro\mydyro\urls.py first seen with mtime 1718908994.6120307
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\async_checks.py first seen with mtime 1716132389.6746104
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\registry.py first seen with mtime 1716132389.685913
+File D:\DyroDev\site\myenv\Lib\site-packages\django\middleware\security.py first seen with mtime 1716132390.9044776
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\storage\__init__.py first seen with mtime 1716132389.742095
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\apps.py first seen with mtime 1716132378.4782178
+File D:\Python310\DLLs\_overlapped.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\comparison.py first seen with mtime 1716132390.445466
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\deletion.py first seen with mtime 1716132390.318175
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loader_tags.py first seen with mtime 1716132390.9477992
+File D:\DyroDev\aversion\site\mydyro\mydyro\settings.py first seen with mtime 1719482332.6426067
+File D:\DyroDev\site\myenv\Lib\site-packages\django\__init__.py first seen with mtime 1716132373.3342838
+File D:\Python310\Lib\wsgiref\headers.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\engine\__init__.py first seen with mtime 1716132372.2592628
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\models.py first seen with mtime 1716132390.5233085
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\version.py first seen with mtime 1716132391.3425941
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_tz.py first seen with mtime 1719469732.62118
+File D:\Python310\Lib\threading.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\messages.py first seen with mtime 1716132389.681845
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\introspection.py first seen with mtime 1716132390.062447
+File D:\DyroDev\site\myenv\Lib\site-packages\django\templatetags\cache.py first seen with mtime 1716132391.0441394
+File D:\Python310\Lib\asyncio\proactor_events.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\templatetags\static.py first seen with mtime 1716132391.052658
+File D:\Python310\Lib\argparse.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\copy.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\__init__.py first seen with mtime 1716132388.4521332
+File D:\Python310\Lib\email\quoprimime.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\secrets.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\fields.py first seen with mtime 1716132390.5142741
+File D:\Python310\Lib\_markupbase.py first seen with mtime 1642409712.0
+File D:\Python310\DLLs\_decimal.pyd first seen with mtime 1642409764.0
+File D:\Python310\Lib\concurrent\futures\thread.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\utils.py first seen with mtime 1716132384.5467968
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\database.py first seen with mtime 1716132389.677848
+File D:\DyroDev\site\myenv\Lib\site-packages\django\shortcuts.py first seen with mtime 1716132373.3367994
+File D:\Python310\Lib\urllib\request.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\forms\formsets.py first seen with mtime 1716132390.5193112
+File D:\Python310\Lib\concurrent\futures\_base.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\__init__.py first seen with mtime 1716132372.2419038
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py first seen with mtime 1716132376.359648
+File D:\Python310\Lib\email\utils.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\defaults.py first seen with mtime 1716132391.3953822
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\aligned_indent.py first seen with mtime 1716132372.265097
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\manager.py first seen with mtime 1716132390.3319745
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\context.py first seen with mtime 1716132390.9141543
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\hashable.py first seen with mtime 1716132391.259506
+File D:\Python310\Lib\html\__init__.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\_sitebuiltins.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_pipeline.py first seen with mtime 1719469732.613625
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\json.py first seen with mtime 1716132390.400187
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\_wrappers.py first seen with mtime 1719469732.6221828
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\cursor.py first seen with mtime 1719469732.635964
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\pq\abc.py first seen with mtime 1719469732.673739
+File D:\DyroDev\site\myenv\Lib\site-packages\colorama\ansitowin32.py first seen with mtime 1718567532.650029
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\types\multirange.py first seen with mtime 1719469732.689852
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\shortcuts.py first seen with mtime 1716132388.5118525
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\query.py first seen with mtime 1716132390.484313
+File D:\Python310\Lib\asyncio\exceptions.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\calendar.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\middleware\common.py first seen with mtime 1716132390.8776295
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\__init__.py first seen with mtime 1716132390.034111
+File D:\Python310\Lib\ast.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\mail\utils.py first seen with mtime 1716132389.789671
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\postgresql\features.py first seen with mtime 1716132390.1649153
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\__init__.py first seen with mtime 1716132389.6719632
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\validators.py first seen with mtime 1716132377.3416817
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\engine\filter_stack.py first seen with mtime 1716132372.2602627
+File D:\Python310\Lib\sysconfig.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\decorators\common.py first seen with mtime 1716132391.4322
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\checks.py first seen with mtime 1716132388.4582162
+File D:\DyroDev\site\myenv\Lib\site-packages\django\templatetags\tz.py first seen with mtime 1716132391.056333
+File D:\Python310\Lib\numbers.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\zoneinfo\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\constants.py first seen with mtime 1716132390.3117995
+File D:\Python310\Lib\lzma.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\logging\handlers.py first seen with mtime 1642409712.0
+File D:\DyroDev\aversion\site\mydyro\mydyro\__init__.py first seen with mtime 1716132152.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\urls\resolvers.py first seen with mtime 1716132391.112426
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\backends\base\creation.py first seen with mtime 1716132390.0569358
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\loader.py first seen with mtime 1716132390.94477
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\exceptions.py first seen with mtime 1716132374.4096878
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\errors.py first seen with mtime 1719469732.639995
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\templatetags\__init__.py first seen with mtime 1716132376.357313
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\connection.py first seen with mtime 1716132391.1972916
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\temp.py first seen with mtime 1716132389.7340639
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\finders.py first seen with mtime 1716132389.5234628
+File D:\Python310\Lib\bz2.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\choices.py first seen with mtime 1716132391.1942499
+File D:\Python310\Lib\_compression.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\helpers.py first seen with mtime 1716132374.4126725
+File D:\Python310\Lib\keyword.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\concurrent\futures\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sitemaps\__init__.py first seen with mtime 1716132388.440926
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\serializers\__init__.py first seen with mtime 1716132389.9573202
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\storage\__init__.py first seen with mtime 1716132384.5533123
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\servers\basehttp.py first seen with mtime 1716132389.995993
+File D:\Python310\Lib\heapq.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\random.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\functions\mixins.py first seen with mtime 1716132390.4644332
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\utils.py first seen with mtime 1716132390.0049105
+File D:\DyroDev\site\myenv\Lib\site-packages\colorama\__init__.py first seen with mtime 1718567532.6478214
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\lookups.py first seen with mtime 1716132390.3279536
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\exceptions.py first seen with mtime 1716132390.9273355
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\filters\tokens.py first seen with mtime 1716132372.2732038
+File D:\Python310\Lib\string.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\validators.py first seen with mtime 1716132389.6091611
+File D:\DyroDev\site\myenv\Lib\site-packages\asgiref\current_thread_executor.py first seen with mtime 1716132373.0123143
+File D:\DyroDev\site\myenv\Lib\site-packages\django\apps\config.py first seen with mtime 1716132373.339803
+File D:\Python310\Lib\asyncio\runners.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\operations\models.py first seen with mtime 1716132390.2709067
+File D:\Python310\Lib\logging\config.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\checks\security\__init__.py first seen with mtime 1716132389.7117457
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\abc.py first seen with mtime 1719469732.6231894
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\generators.py first seen with mtime 1719469732.642013
+File D:\Python310\Lib\hmac.py first seen with mtime 1642409712.0
+File D:\DyroDev\aversion\site\mydyro\dyro1\models.py first seen with mtime 1719481363.9690733
+File D:\Python310\Lib\socketserver.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\importlib\util.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\ipaddress.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\ctypes\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\__init__.py first seen with mtime 1716132389.5173268
+File D:\Python310\Lib\email\mime\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\aversion\site\mydyro\manage.py first seen with mtime 1716132152.0
+File D:\Python310\Lib\json\decoder.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\files\locks.py first seen with mtime 1716132389.731007
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\state.py first seen with mtime 1716132390.2441514
+File D:\Python310\Lib\asyncio\windows_events.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\rows.py first seen with mtime 1719469732.644009
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\server_cursor.py first seen with mtime 1719469732.6460054
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\sql.py first seen with mtime 1716132372.254246
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\text.py first seen with mtime 1716132391.3075972
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\models.py first seen with mtime 1716132378.4876864
+File D:\Python310\DLLs\_bz2.pyd first seen with mtime 1642409764.0
+File D:\Python310\DLLs\_socket.pyd first seen with mtime 1642409764.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\__init__.py first seen with mtime 1716132387.3819935
+File D:\Python310\Lib\collections\__init__.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\library.py first seen with mtime 1716132390.9356606
+File D:\DyroDev\site\myenv\Lib\site-packages\django\utils\termcolors.py first seen with mtime 1716132391.304175
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\postgres.py first seen with mtime 1719469732.6429963
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1716132389.649812
+File D:\DyroDev\site\myenv\Lib\site-packages\django\core\serializers\json.py first seen with mtime 1716132389.961902
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\sql.py first seen with mtime 1719469732.6471825
+File D:\DyroDev\site\myenv\Lib\site-packages\psycopg\version.py first seen with mtime 1719469732.6500168
+File D:\DyroDev\site\myenv\Lib\site-packages\colorama\ansi.py first seen with mtime 1718567532.6488857
+File D:\DyroDev\site\myenv\Lib\site-packages\sqlparse\cli.py first seen with mtime 1716132372.2475238
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\fields.py first seen with mtime 1716132378.4822557
+File D:\Python310\Lib\wsgiref\simple_server.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\checks.py first seen with mtime 1716132389.5219467
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\fields\related.py first seen with mtime 1716132390.4202132
+File D:\Python310\Lib\operator.py first seen with mtime 1642409712.0
+File D:\Python310\Lib\sre_constants.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\decorators\debug.py first seen with mtime 1716132391.4374616
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\about.html first seen with mtime 1719478957.631216
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\auth first seen with mtime 1719468385.74393
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\category first seen with mtime 1719415717.8324406
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\error.html first seen with mtime 1718808314.6757407
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\index.html first seen with mtime 1719478557.5447903
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\posts first seen with mtime 1719415717.8597481
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\success.html first seen with mtime 1718816508.9045553
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\sunpac-view.html first seen with mtime 1719480830.4897344
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\test.html first seen with mtime 1716917648.0
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\videos first seen with mtime 1719415717.885821
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\work-view.html first seen with mtime 1716889245.0
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\auth\forget.html first seen with mtime 1719485533.2912495
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\auth\login.html first seen with mtime 1719485468.2710135
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\auth\otp.html first seen with mtime 1719485437.3207078
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\auth\reset.html first seen with mtime 1719485505.5906575
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\auth\signup.html first seen with mtime 1719485280.7503343
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\category\category_confirm_delete.html first seen with mtime 1718981747.7637405
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\category\category_detail.html first seen with mtime 1718981612.7519424
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\category\category_form.html first seen with mtime 1718980593.2953339
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\category\category_list.html first seen with mtime 1718981383.8746479
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\posts\post_confirm_delete.html first seen with mtime 1718982386.9666817
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\posts\post_detail.html first seen with mtime 1718992326.5211885
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\posts\post_form.html first seen with mtime 1718991683.562559
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\posts\post_list.html first seen with mtime 1718982582.8618214
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\videos\video_confirm_delete.html first seen with mtime 1719156768.5535848
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\videos\video_detail.html first seen with mtime 1719170534.9395895
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\videos\video_form.html first seen with mtime 1719169402.8599758
+File D:\DyroDev\aversion\site\mydyro\dyro1\templates\videos\video_list.html first seen with mtime 1719157624.4046433
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1716132378.4413254
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\_util.py first seen with mtime 1716132610.6511586
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1716132375.4619627
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1716132379.5248377
+File D:\DyroDev\aversion\site\mydyro\mydyro\wsgi.py first seen with mtime 1716132152.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1716132378.4474945
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1716132388.4379249
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1716132378.4383266
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\migrations\__init__.py first seen with mtime 1716132389.5151587
+File D:\Python310\Lib\encodings\idna.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1716132378.4238296
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1716132378.4149706
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1716132378.4312272
+File D:\Python310\Lib\stringprep.py first seen with mtime 1642409712.0
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1716132379.5237856
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1716132390.239642
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\_version.py first seen with mtime 1716132610.6525648
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\__init__.py first seen with mtime 1716132610.6005423
+File D:\DyroDev\aversion\site\mydyro\dyro1\migrations\__init__.py first seen with mtime 1719481614.1851437
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\migrations\0002_alter_domain_unique.py first seen with mtime 1716132389.5141416
+File D:\DyroDev\site\myenv\Lib\site-packages\django\views\csrf.py first seen with mtime 1716132391.367835
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\TiffTags.py first seen with mtime 1716132610.5923154
+File D:\DyroDev\aversion\site\mydyro\dyro1\migrations\0001_initial.py first seen with mtime 1719481624.2105057
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1716132375.4960032
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\Image.py first seen with mtime 1716132610.5104823
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\_typing.py first seen with mtime 1716132610.650151
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1716132379.5212674
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1716132390.226845
+File D:\DyroDev\site\myenv\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1716132390.8752093
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1716132388.4369347
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sites\migrations\0001_initial.py first seen with mtime 1716132389.511029
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\ImageMode.py first seen with mtime 1716132610.5391047
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1716132378.4302263
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1716132378.4213173
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\_binary.py first seen with mtime 1716132610.6029615
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1716132378.4169817
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1716132375.4609613
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1716132378.4259965
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1716132390.2240918
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1716132390.2288606
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\ExifTags.py first seen with mtime 1716132610.4880934
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1716132387.4195368
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1716132378.4280176
+File D:\DyroDev\site\myenv\Lib\site-packages\PIL\_imaging.cp310-win_amd64.pyd first seen with mtime 1716132610.619496
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1716132378.4189973
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1716132375.479098
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1716132378.4363375
+File D:\DyroDev\site\myenv\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1716132390.475268
+"GET / HTTP/1.1" 200 19597
+"GET /static/index.css HTTP/1.1" 200 29113
+"GET /static/aset/logo.svg HTTP/1.1" 200 122850
+"GET /static/aset/tt.svg HTTP/1.1" 200 1145762
+"GET /static/aset/e1.svg HTTP/1.1" 200 3841
+"GET /static/aset/e2.svg HTTP/1.1" 200 6405
+"GET /static/aset/e3.svg HTTP/1.1" 200 51317
+"GET /static/aset/e4.svg HTTP/1.1" 200 62414
+"GET /static/aset/i2.svg HTTP/1.1" 200 19506
+"GET /static/aset/i1.svg HTTP/1.1" 200 9661
+"GET /static/aset/i3.svg HTTP/1.1" 200 6376
+"GET /static/aset/inst.svg HTTP/1.1" 200 1650
+"GET /static/aset/x.svg HTTP/1.1" 200 1085
+"GET /static/aset/lkd.svg HTTP/1.1" 200 2017
+Exception while resolving variable 'msg' in template 'auth/signup.html'.
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+AttributeError: type object 'RequestContext' has no attribute 'msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [msg] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'kb6itBBu2Dh5iD7pgFaqldKVKNRB48v64rtQMgrzXDsJOVF60Y6qXY7iyGOS3Z9L'>, 'request': <WSGIRequest: GET '/signup/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000024A60D48700>>, 'perms': PermWrapper(<SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000024A60D48700>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/signup/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1716132384.6033719
+"GET /static/aset/dd.webp HTTP/1.1" 200 6868
+"GET /static/aset/yt.svg HTTP/1.1" 200 1888
+"GET /static/aset/image.png HTTP/1.1" 200 400553
+"GET /signup/ HTTP/1.1" 200 10533
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1716132387.4084768
+File D:\DyroDev\site\myenv\Lib\site-packages\django\template\context_processors.py first seen with mtime 1716132390.9172552
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1716132377.2962885
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\staticfiles\storage.py first seen with mtime 1716132389.5323117
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1716132384.5383725
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1716132384.5884705
+File D:\DyroDev\site\myenv\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1716132384.5993478
+"GET /static/auth/signup.css HTTP/1.1" 200 10602
+"GET /static/aset/fav/DyroDev.ico HTTP/1.1" 404 1819
+"GET /static/aset/fav/site.webmanifest HTTP/1.1" 404 1834
+"GET /static/aset/fav/DyroDev32x32.png HTTP/1.1" 404 1834
+"GET /static/aset/fav/DyroDev16x16.png HTTP/1.1" 404 1834
+"GET /static/aset/fav/DyroDev192x192.png HTTP/1.1" 404 1840
+"GET /static/aset/fav/DyroDev194x194.png HTTP/1.1" 404 1840
+"GET / HTTP/1.1" 200 19597
+"GET /static/aset/fav/site.webmanifest HTTP/1.1" 404 1834
+"GET /about/ HTTP/1.1" 200 4558
+"GET /static/about.css HTTP/1.1" 200 6100
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'about/' [name='about']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'work/' [name='work']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'signup/' [name='signup']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'otp/' [name='otp']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'forget/' [name='forget']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'reset/' [name='reset']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'sitemap.xml' [name='django.contrib.sitemaps.views.sitemap']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'success/' [name='success']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'error/' [name='error']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'sunpac_view/' [name='sunpac_view']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'sitemap.xml/' [name='django.contrib.sitemaps.views.sitemap']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'posts/' [name='post_list']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'add-post/' [name='post_add']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'posts/<slug:slug>/update/' [name='post_update']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'posts/<slug:slug>/delete/' [name='post_delete']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'posts/<slug:slug>/' [name='post_detail']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'videos/' [name='video_list']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'video/create/' [name='video_create']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'video/update/<int:pk>/' [name='video_update']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'video/delete/<int:pk>/' [name='video_delete']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'video/<slug:slug>/' [name='video_detail']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'category-list/' [name='category_list']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern 'add-category/' [name='category_add']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern '<slug:slug>/update/' [name='category_update']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern '<slug:slug>/delete/' [name='category_delete']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern '<slug:slug>/' [name='category_detail']>], [<URLResolver <module 'dyro1.urls' from 'D:\\DyroDev\\aversion\\site\\mydyro\\dyro1\\urls.py'> (None:None) ''>, <URLPattern '^media/(?P<path>.*)$'>], [<URLPattern 'sitemap.xml' [name='django.contrib.sitemaps.views.sitemap']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\DyroDev\site\myenv\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7676
+"GET / HTTP/1.1" 200 19597
+"GET /static/aset/fav/site.webmanifest HTTP/1.1" 404 1834
+"GET /about/ HTTP/1.1" 200 4558
+"GET / HTTP/1.1" 200 19597
+"GET /static/aset/fav/site.webmanifest HTTP/1.1" 404 1834
+"GET /about/ HTTP/1.1" 200 4558
+"GET / HTTP/1.1" 200 19597
+"GET /static/aset/fav/site.webmanifest HTTP/1.1" 404 1834
+"GET /about/ HTTP/1.1" 200 4558
