@@ -13,31 +13,14 @@ import random
 from .models import Post, Comment
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
+from .decorators import user_is_authenticated, user_is_admin, user_is_author, user_is_regular
+
+# @user_is_authenticated
+# @user_is_admin
+# @user_is_author
+# @user_is_regular
 
 
-
-def login_required(view_func):
-    def wrapper(request, *args, **kwargs):
-        if not request.user.is_authenticated:
-            return redirect('login')  # Redirect to your login URL
-        return view_func(request, *args, **kwargs)
-    return wrapper
-
-def admin_required(view_func):
-    def wrapper(request, *args, **kwargs):
-        if not request.user.is_authenticated or not request.user.is_admin:
-            return redirect('login')  # Redirect to your login URL or a custom unauthorized page
-        return view_func(request, *args, **kwargs)
-    return wrapper
-
-def role_required(role):
-    def decorator(view_func):
-        def wrapper(request, *args, **kwargs):
-            if not request.user.is_authenticated or request.user.role != role:
-                return redirect('login')  # Redirect to your login URL or a custom unauthorized page
-            return view_func(request, *args, **kwargs)
-        return wrapper
-    return decorator
 
 logger = logging.getLogger(__name__)
   
@@ -59,6 +42,8 @@ def send_otp_email(email, otp):
     # 20/06/2024
     
 
+# @user_is_admin
+@user_is_regular
 def home(request):
     if request.method == 'POST':
         name = request.POST.get('fullName')
@@ -166,13 +151,12 @@ def signup(request):
 
 
 def login(request):
-    
     if request.method == 'POST':
-        mail = request.POST.get('email') 
+        mail = request.POST.get('email')
         password = request.POST.get('password')
 
         if not mail or not password:
-            msg = '~ Incomplete Form '
+            msg = '~ Incomplete Form'
             return render(request, "auth/login.html", {'msg': msg})
 
         try:
@@ -180,7 +164,7 @@ def login(request):
         except User.DoesNotExist:
             msg = '~ No user found'
             return render(request, "auth/login.html", {'msg': msg})
-      
+
         print(f'User hashed password: {user.password}')
 
         if not check_password(password, user.password):
@@ -190,10 +174,10 @@ def login(request):
         else:
             request.session['is_authenticated'] = True
             request.session['user_id'] = user.id
-            request.session['is_admin'] = user.is_admin
+            request.session['role'] = user.role  # Add the role to the session
             msg = 'Login successful'
-            return redirect(home)
-    
+            return redirect('home')  # Replace 'home' with your actual home view name
+
     return render(request, 'auth/login.html')
 
 
