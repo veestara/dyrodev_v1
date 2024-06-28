@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     # -------------------------
+    'ckeditor',
 ]
 
 SITE_ID = 1
@@ -187,4 +188,13 @@ LOGGING = {
         },
     },
 }
+
+# ===========================================
+# login signup
+# settings.py
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'  # Change 'home' to your desired redirect URL after login
+LOGOUT_REDIRECT_URL = 'home'  # Change 'home' to your desired redirect URL after logout
+
 

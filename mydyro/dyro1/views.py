@@ -8,8 +8,11 @@ from .models import *
 from django.urls import reverse
 from .forms import CategoryForm, PostForm
 import logging
-from .forms import VideoForm
+from .forms import VideoForm, CommentForm
 import random
+from .models import Post, Comment
+from django.http import JsonResponse
+
 
 logger = logging.getLogger(__name__)
   
@@ -385,9 +388,74 @@ def post_delete(request, slug):
     return render(request, 'posts/post_confirm_delete.html', {'post': post})
 
 
+# def post_detail(request, slug):
+#     post = get_object_or_404(Post, slug=slug)
+#     return render(request, 'posts/post_detail.html', {'post': post})
+
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    return render(request, 'posts/post_detail.html', {'post': post})
+    comments = post.comments.filter(active=True)
+    new_comment = None
+    
+    is_auth = request.session.get('is_authenticated', False)
+
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = post
+            new_comment.save()
+    else:
+        comment_form = CommentForm()
+
+    return render(request, 'posts/post_detail.html', {
+        'post': post,
+        'comments': comments,
+        'new_comment': new_comment,
+        'comment_form': comment_form,
+        'is_auth': is_auth
+    })
+    
+# ==================================================
+# comment
+# def add_comment(request, slug):
+#     is_auth = request.session.get('is_authenticated')
+#     if is_auth:        
+#         return redirect('login')
+    
+#     post = get_object_or_404(Post, slug=slug)
+#     if request.method == 'POST':
+#         comment_form = CommentForm(data=request.POST)
+#         if comment_form.is_valid():
+#             new_comment = comment_form.save(commit=False)
+#             new_comment.post = post
+#             new_comment.save()
+#             return JsonResponse({
+#                 'name': new_comment.name,
+#                 'body': new_comment.body,
+#                 'created_on': new_comment.created_on.strftime('%Y-%m-%d %H:%M:%S')
+#             })
+#     return JsonResponse({'error': 'Invalid form data'}, status=400)
+
+def add_comment(request, slug):
+    if not request.session.get('is_authenticated'):
+        return JsonResponse({'error': 'User not authenticated'}, status=403)
+
+    post = get_object_or_404(Post, slug=slug)
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = post
+            new_comment.save()
+            return JsonResponse({
+                'name': new_comment.name,
+                'body': new_comment.body,
+                'created_on': new_comment.created_on.strftime('%Y-%m-%d %H:%M:%S')
+            })
+    return JsonResponse({'error': 'Invalid form data'}, status=400)
+
+    
 
 
 # ==================================================

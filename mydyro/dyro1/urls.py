@@ -41,6 +41,11 @@ urlpatterns = [
     path('posts/<slug:slug>/', views.post_detail, name='post_detail'),
     
 # ======================================================
+# comment
+    path('post/<slug:slug>/add_comment/', views.add_comment, name='add_comment'),
+    
+    
+# ======================================================
 # video
     path('videos/', views.video_list, name='video_list'),
     path('video/create/', views.video_create, name='video_create'),
