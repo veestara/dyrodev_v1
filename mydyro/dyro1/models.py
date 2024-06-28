@@ -7,19 +7,25 @@ from django.core.exceptions import ValidationError
 # Create your models here.
 
 
-   
 class User(models.Model):
+    ROLE_CHOICES = [
+        ('regular', 'Regular User'),
+        ('author', 'Author'),
+        ('admin', 'Admin'),
+    ]
+    
     id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     phone = models.CharField(max_length=20)  # Adjust max_length as needed
     email = models.EmailField(max_length=180)
     password = models.CharField(max_length=128)  # To store the hashed password
-    is_admin = models.BooleanField(default = False)
-
+    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='regular')
+    is_admin = models.BooleanField(default=False)
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
+
 
 
 

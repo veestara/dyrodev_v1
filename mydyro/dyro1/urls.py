@@ -7,6 +7,7 @@ from django.contrib.sitemaps.views import sitemap
 from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import user_role_management
 
 
 
@@ -44,7 +45,11 @@ urlpatterns = [
 # comment
     path('post/<slug:slug>/add_comment/', views.add_comment, name='add_comment'),
     
-    
+# ======================================================
+# Manage role
+
+    path('manage-roles/', user_role_management, name='user_role_management'),
+
 # ======================================================
 # video
     path('videos/', views.video_list, name='video_list'),

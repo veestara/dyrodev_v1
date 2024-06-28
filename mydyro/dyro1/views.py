@@ -12,7 +12,32 @@ from .forms import VideoForm, CommentForm
 import random
 from .models import Post, Comment
 from django.http import JsonResponse
+from django.contrib.auth.decorators import login_required
 
+
+
+def login_required(view_func):
+    def wrapper(request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            return redirect('login')  # Redirect to your login URL
+        return view_func(request, *args, **kwargs)
+    return wrapper
+
+def admin_required(view_func):
+    def wrapper(request, *args, **kwargs):
+        if not request.user.is_authenticated or not request.user.is_admin:
+            return redirect('login')  # Redirect to your login URL or a custom unauthorized page
+        return view_func(request, *args, **kwargs)
+    return wrapper
+
+def role_required(role):
+    def decorator(view_func):
+        def wrapper(request, *args, **kwargs):
+            if not request.user.is_authenticated or request.user.role != role:
+                return redirect('login')  # Redirect to your login URL or a custom unauthorized page
+            return view_func(request, *args, **kwargs)
+        return wrapper
+    return decorator
 
 logger = logging.getLogger(__name__)
   
@@ -32,6 +57,8 @@ def send_otp_email(email, otp):
 
 # ------------------------------------------------------
     # 20/06/2024
+    
+
 def home(request):
     if request.method == 'POST':
         name = request.POST.get('fullName')
@@ -417,25 +444,6 @@ def post_detail(request, slug):
     })
     
 # ==================================================
-# comment
-# def add_comment(request, slug):
-#     is_auth = request.session.get('is_authenticated')
-#     if is_auth:        
-#         return redirect('login')
-    
-#     post = get_object_or_404(Post, slug=slug)
-#     if request.method == 'POST':
-#         comment_form = CommentForm(data=request.POST)
-#         if comment_form.is_valid():
-#             new_comment = comment_form.save(commit=False)
-#             new_comment.post = post
-#             new_comment.save()
-#             return JsonResponse({
-#                 'name': new_comment.name,
-#                 'body': new_comment.body,
-#                 'created_on': new_comment.created_on.strftime('%Y-%m-%d %H:%M:%S')
-#             })
-#     return JsonResponse({'error': 'Invalid form data'}, status=400)
 
 def add_comment(request, slug):
     if not request.session.get('is_authenticated'):
@@ -454,8 +462,6 @@ def add_comment(request, slug):
                 'created_on': new_comment.created_on.strftime('%Y-%m-%d %H:%M:%S')
             })
     return JsonResponse({'error': 'Invalid form data'}, status=400)
-
-    
 
 
 # ==================================================
@@ -507,3 +513,29 @@ def get_youtube_id_from_embed_code(embed_code):
     if match:
         return match.group(1)
     return None
+
+# ================================================
+# User Role
+def user_role_management(request):
+    if request.method == 'POST':
+        user_id = request.POST.get('user')
+        role = request.POST.get('role')
+        
+        try:
+            user = User.objects.get(id=user_id)
+            user.role = role
+            if role == 'admin':
+                user.is_admin = True
+            else:
+                user.is_admin = False
+            user.save()
+        except User.DoesNotExist:
+            # Handle user not found case
+            pass
+        
+        return redirect('user_role_management')
+    
+    else:
+        users = User.objects.all()
+        roles = User.ROLE_CHOICES
+        return render(request, 'manage-role/user_role_management.html', {'users': users, 'roles': roles})
