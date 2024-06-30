@@ -43,7 +43,7 @@ def send_otp_email(email, otp):
     
 
 # @user_is_admin
-@user_is_regular
+# @user_is_regular
 def home(request):
     if request.method == 'POST':
         name = request.POST.get('fullName')

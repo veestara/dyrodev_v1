@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if form.instance.pk %}Update{% else %}Add{% endif %} Post</title>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -176,5 +177,9 @@
         <!-- Back to Post List Link -->
         <a class="back-link" href="{% url 'post_list' %}">Back to Post List</a>
     </form>
+    <script>
+        // Initialize CKEditor on the content field
+        CKEDITOR.replace('{{ form.content.id_for_label }}');
+    </script>
 </body>
 </html>

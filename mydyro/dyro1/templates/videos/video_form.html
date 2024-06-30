@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% if form.instance.pk %}Update Video{% else %}Add Video{% endif %}</title>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -82,5 +83,8 @@
             <button type="submit">Save</button>
         </form>
     </div>
+    <script>
+        CKEDITOR.replace('id_description');
+    </script>
 </body>
 </html>

@@ -78,7 +78,7 @@
             {% for video in videos %}
             <li class="list-group-item">
                 <h4><a href="{% url 'video_detail' video.slug %}">{{ video.title }}</a></h4>
-                <p>{{ video.description }}</p>
+                <p>{{ video.description |safe }}</p>
                 <a href="{% url 'video_update' video.pk %}" class="btn btn-primary">Update</a>
                 <a href="{% url 'video_delete' video.pk %}" class="btn btn-danger">Delete</a>
             </li>
