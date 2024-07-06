@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ category.name }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 800px; /* Adjusted for wider content */
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions a {
+            display: inline-block;
+            margin: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .actions a:hover {
+            background-color: #45a049;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        .post-list {
+            margin-top: 30px;
+        }
+        .post-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .post-item h2 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .post-item p {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'category_list' %}">Categories</a>
+        <a href="{% url 'category_add' %}">Add Category</a>
+    </nav>
+    <div class="container">
+        <h1>{{ category.name }}</h1>
+        <div class="actions">
+            <a href="{% url 'category_update' category.slug %}">Edit</a>
+            <a href="{% url 'category_delete' category.slug %}">Delete</a>
+        </div>
+        <div class="back-link">
+            <a href="{% url 'category_list' %}">Back to Category List</a>
+        </div>
+        
+        <div class="post-list">
+            <h2>Posts in {{ category.name }}</h2>
+            {% if category.posts.all %}
+                <ul>
+                    {% for post in category.posts.all %}
+                        <li class="post-item">
+                            <h3><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No posts found in this category.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

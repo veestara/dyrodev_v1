@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ video.title}}</title>
+    <link rel="stylesheet" href="{% static 'grid/video-detail.css' %}">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5CS37QY3Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B5CS37QY3Z');
+    </script>
+</head>s
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
+            <div class="nav">
+
+                <div class="btn-n" data-url="/#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="/#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="/#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+        <!-- Video Details -->
+        <div class="message">
+            <h1>{{ video.title }}</h1>
+            <p>{{ video.description }}</p>
+        </div>
+
+    <div class="con">
+        {% if video %}
+        <div class="con-video">
+            {% if youtube_id %}
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/{{ youtube_id }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% else %}
+            <div class="msg">
+                <p>No video available.</p>
+            </div>
+            {% endif %}
+
+            <h2> {{ video.title}}</h2>
+
+            <p> {{ video.description }} </p>
+        </div>
+
+        {% endif %}
+        <div class="con-sub">
+            <div class="sub">
+                {% if video.code_snippet %}
+                <div class="message code-container">
+                    <div class="code-header">
+                        <span class="name">{{ video.code_snippet_name }}</span> <!-- Display file name -->
+                        <button class="copy-button"
+                            onclick="copyCode('{{ video.code_snippet|escapejs }}', this)">Copy</button>
+                    </div>
+                    <pre>{{ video.code_snippet }}</pre>
+                </div>
+                {% endif %}
+
+            </div>
+
+
+            {% if related_videos %}
+            {% for r in related_videos %}
+            <div class="video-card">
+
+                <div class="img">
+                    {% if video.image %}
+                    <img src="{{ r.image.url }}" alt="{{ r.title }}">
+                    {% endif %}
+                </div>
+
+                <h2> {{ r.title|slice:":70" }}{% if r.title|length > 70 %}...{% endif %}</h2>
+
+                <!-- <p> {{ v.description|slice:":100" }}{% if v.description|length > 100 %}...{% endif %}
+                </p> -->
+
+            </div>
+            {% endfor %}
+
+            {% endif %}
+
+        </div>
+    </div>
+
+    <script>
+        function copyCode(code, button) {
+            navigator.clipboard.writeText(code)
+                .then(() => {
+                    button.classList.add('copied');
+                    setTimeout(() => {
+                        button.classList.remove('copied');
+                    }, 1000); // Remove 'copied' class after 1 second
+                })
+                .catch(err => {
+                    console.error('Failed to copy code: ', err);
+                });
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const copyButton = document.querySelector('.copy-button');
+
+            copyButton.addEventListener('click', function () {
+                // Copy logic here (you should have this implemented already)
+
+                // Change opacity and show checkmark
+                copyButton.classList.add('copied');
+
+                // Revert opacity and hide checkmark after 3 seconds
+                setTimeout(function () {
+                    copyButton.classList.remove('copied');
+                }, 3000); // 3000 milliseconds = 3 seconds
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

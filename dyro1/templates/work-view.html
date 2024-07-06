@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'work-view.css' %}">
+    <title>Work</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
+            <div class="nav">
+                <div class="btn-n" data-url="#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="#con-contact">
+                    Contact us
+                </div>
+            </div>
+        </div>
+
+        <div class="con1">
+            <div class="con-img">
+                <img src="{% static 'aset/image.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f-logo" data-url="/">
+                <img class=".nav-logo" src="{% static 'aset/logo.svg' %}" alt="">
+                <p>Got a big idea? Let's make it happen</p>
+            </div>
+
+            <div class="nav">
+                <div class="btn-n" data-url="#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="social">
+                <img src="{% static 'aset/yt.svgs' %}" alt="">
+                <img src="{% static 'aset/lkd.svgs' %}" alt="">
+                <img src="{% static 'aset/x.svgs' %}" alt="">
+                <img src="{% static 'aset/inst.svgs' %}" alt="">
+
+            </div>
+
+            <p>© Dyro Dev. All rights reserved 2024</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

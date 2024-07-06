@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+    <meta name="description" content="{{ post.meta_description }}">
+    <meta name="keywords" content="{{ post.meta_keywords }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions a {
+            margin: 0 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            display: none; /* Initially hide for non-admin users */
+        }
+        .actions a:hover {
+            background-color: #45a049;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'category_list' %}">Categories</a>
+        <a href="{% url 'post_list' %}">Posts</a>
+        <a href="{% url 'post_add' %}">Add Post</a>
+    </nav>
+    <div class="container">
+        <h1>{{ post.title }}</h1>
+        <p>Category: <a href="{% url 'category_detail' post.category.slug %}">{{ post.category.name }}</a></p>
+        {% if post.image %}
+        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+        {% endif %}
+        <p>{{ post.content }}</p>
+        <p>Created at: {{ post.created_at }}</p>
+        {% if user.is_authenticated and user.is_staff %}
+        <div class="actions">
+            <a href="{% url 'post_update' post.slug %}">Edit</a>
+            <a href="{% url 'post_delete' post.slug %}">Delete</a>
+        </div>
+        {% endif %}
+        <div class="back-link">
+            <a href="{% url 'post_list' %}">Back to Post List</a>
+        </div>
+    </div>
+</body>
+</html>

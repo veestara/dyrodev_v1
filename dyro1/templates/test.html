@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .left {
+            height: 100%;
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .con {
+                position: relative;
+                /* background-color: aqua; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 15vw;
+                width: 15vw;
+
+
+                svg{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                ellipse {
+                    fill: none;
+                    stroke: #323232;
+                    stroke-width: 1.2;
+                    stroke-dasharray: 2;
+                    animation: rotateBorder 8s linear infinite;
+                }
+
+
+                #o1 {
+                    width: 40vw;
+                    height: 40vw;
+                    margin-top: 9vw;
+                    margin-right: 12vw;
+                    transform: rotate(90deg);
+                }
+
+                #o2 {
+                    width: 40vw;
+                    height: 40vw;
+                    margin-top: 12vw;
+                    margin-left: 10vw;
+                    /* transform: rotate(90deg); */
+                }
+
+                
+                #o3 {
+                    width: 40vw;
+                    height: 42vw;
+                    transform: rotate(45deg);
+                    margin-top: 13.5vw;
+                    margin-right: -.3vw;
+                    /* transform: rotate(90deg); */
+                }
+
+                  
+                #o4 {
+                    width: 40vw;
+                    height: 42vw;
+                    transform: rotate(-45deg);
+                    margin-top: -.2vw;
+                    margin-left: 16vw;
+                    /* transform: rotate(90deg); */
+                }
+
+                img{
+                    width: 25vw;
+                    height: 25vw;
+                }
+            }
+        }
+
+        @keyframes rotateBorder {
+            from {
+                stroke-dashoffset: 0;
+            }
+
+            to {
+                stroke-dashoffset: 200;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="con">
+            <svg id="o1" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                <ellipse id="e1" cx="25" cy="70" rx="25" ry="70" />
+            </svg>
+
+            <svg id="o2" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="25" cy="70" rx="25" ry="70" />
+            </svg>
+
+           
+
+            <svg id="o3" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="25" cy="75" rx="25" ry="75" />
+            </svg> 
+
+            <svg id="o4" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="25" cy="75" rx="25" ry="75" />
+            </svg>
+
+            <img src="{% static 'aset/tt.svg' %}" alt=""> 
+        </div>
+    </div>
+</body>
+
+</html>

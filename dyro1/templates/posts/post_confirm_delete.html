@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .delete-form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .delete-form button[type="submit"],
+        .delete-form a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .delete-form button[type="submit"] {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+        .delete-form button[type="submit"]:hover {
+            background-color: #cc0000;
+        }
+        .delete-form a {
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+        }
+        .delete-form a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'category_list' %}">Categories</a>
+        <a href="{% url 'post_list' %}">Posts</a>
+        <a href="{% url 'post_add' %}">Add Post</a>
+    </nav>
+    <h1>Are you sure you want to delete "{{ post.title }}"?</h1>
+    <form method="post" class="delete-form">
+        {% csrf_token %}
+        <button type="submit">Confirm</button>
+        <a href="{% url 'post_list' %}">Cancel</a>
+    </form>
+</body>
+</html>
